@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Silva Jen Retno</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">Portofolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#achievement">Achievement</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Menu Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello ^_^</h3>
+            <h2> </h2>
+            <h3>I'AM<span> SILVA JEN RETNO</span></h3>
+            <div class="sosial-media">
+                <a href="https://github.com/silvajenretno" target="'_blank">
+                    <img src="Gambar/github.png">
+                </a>
+                <a href="https://www.instagram.com/slvvaaa__?igsh=Z242NmJ2enBhajJu" target="'_blank">
+                    <img src="Gambar/instagramm.png">
+                </a>
+                <a href="https://wa.me/qr/WUDMQXHNGHN4B1" target="'_blank">
+                    <img src="Gambar/whatsapp.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Gambar/Profil.png" alt="">
+        </div>
+    </section>
+
+    <!-- Menu About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Gambar/profill.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <h3>^_^</h3>
+            <p>I am a 4th semester student majoring in Information Systems who likes 
+                organizing and has a great interest in design. I am always excited to combine my 
+                technical knowledge in information systems with creativity in design to create 
+                attractive and functional solutions.</p>
+        </div>
+    </section>
+
+    <!-- Menu Achievement -->
+    <section class="achievement" id="achievement">
+        <h2 class="heading">My <span>Achievement</span></h2>
+            <div class="achievement-container">
+                <div class="achievement-box">
+                    <h3>INFORSA (Feb 2023-Dec 2024)</h3>
+                    <p>pengarsipan surat keluar INFORSA</p>
+                    <p>Anggota Departemen Personalia</p>
+                </div>
+
+                <div class="achievement-box">
+                    <h3>Wakil Sekretaris GAMAMUS Teknik (Dec 2023- sekarang)</h3>
+                    <p>Membatu Sekretaris Umum menjalankan tugas administrasi</p>
+                    <p>Melakukan Pengarsipan surat masuk dan surat keluar</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Menu Certificate -->
+    <section class="certificate" id="certificate">
+        <h2 class="heading">My <span>Certificate</span></h2>
+
+        <div class="certificate-container">
+            <div classs="certificate-box">
+                <img src="Gambar/sertifikat inforsa.png" alt="">
+                <div class="certificate-layer">
+                    <h4>INFORSA</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <div classs="certificate-box">
+                <img src="Gambar/sertifikat insevent.jpg" alt="">
+                <div class="certificate-layer">
+                    <h4>INSEVENT</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <div classs="certificate-box">
+                <img src="Gambar/sertifikat mia.jpg" alt="">
+                <div class="certificate-layer">
+                    <h4>MUSLIMAH IN ACTION</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Contact -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+            
+            <script>
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    var fullName = document.getElementById('full-name').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+            
+                    if (fullName === '' || email === '' || message === '') {
+                        alert('Please fill in all fields');
+                        return;
+                    }
+                    alert('Form submitted successfully'); 
+                });
+            </script>
+           
+            
+    </section>
+    <!-- Foother -->
+    <foother class="foother">
+        <div class="foother-text">
+            <p>Copyright &copy;2024 by Silva Jen Retno | All Right Reserve</p>
+        </div>
+    </foother>
+
+    <script src="main.js"></script>
+</body>
+</html>
